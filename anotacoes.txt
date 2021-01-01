@@ -1,0 +1,30 @@
+kotlin
+de claração de variavel = var
+constante = val 
+código começa com chamada de função = fun(){
+
+}
+
+os tipos numericos inteiros podem ser classficados: 
+Byte : 8 bits  |   min  -128  |    max    127  |
+Short : 16 bits  |  min  -32768  | max  32767  |
+Int : 32 bits| min-2,147,483,648 (-231) |max 2,147,483,647 (231 - 1)  |
+Long : 64bits| min -9,223,372,036,854,775,808 (-263) | max 9,223,372,036,854,775,807 (263 - 1)  |
+
+para especificar a classificação do tipo, usar a seguinte escrita:
+
+val nomedavariavel: Byte = valor
+val nomedavariavel: Short = valor
+val nomedavariavel = os valores inteiros não precisam de especificação
+val nomedavariavel: Long = valor ou val nomedavariavel = valorL
+
+
+no caso de valores reais as classificações são as desempre, float e double:
+
+float:
+ var nomedavariavel = valorf (Exs: 1.2f,  3.92f, 2.349f)
+
+ float pode ter etre 6 e 7 casas decimais  e o double entre 15 e 16
+
+ double:
+ var nomedavariavel: Double = valor
