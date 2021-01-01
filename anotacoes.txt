@@ -28,3 +28,39 @@ float:
 
  double:
  var nomedavariavel: Double = valor
+
+ para verificar o tipo do dado armazenado é possível utilizar println(nomedavariavel is Int) o nome do tipo deve começar com a letra maiuscula, o retorno será true ou false. 
+
+ para converter o tipo do dado utiliza-se a função toNomedodado, ex:
+ println(nomedavariavel.toFloat)
+ println(nomedavariavel.toDouble)
+
+
+ *importante - as conversões só podem ser feitas com dados que caibam no tipo, tendo como referencia o valor minimo e maximo de cada tipo
+
+ *Importante - em caso de divisão em que o resultado da operação utilizando dois inteiros for um valor com ponto flutuante, deve se escrever dessa forma. 
+
+ val nomedavariavel = 5.toDouble()/2.toDouble 
+
+ ou
+
+ val nomedavariavel = 5f/2f
+ 
+ ou
+
+ val nomedavariavel = 5f/2 (ou 5/2f)
+
+ No caso acima o resultado será 2.5 se não houver conversão o valor será apenas 2
+
+ *usando os operadores de comparação só é possível comparar dados do mesmo tipo, caso contrário ocorrerá erro na saída. 
+ ex: 
+ val a = 2
+ val b:Short = 2
+
+ println(a==b) - nesse caso a saída será um erro
+
+ println(a==b.toInt()) - nesse caso a saída será true
+
+
+ a escrita das estruturas condicionais se assemelham as demais linguagens
+
