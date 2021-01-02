@@ -64,3 +64,94 @@ float:
 
  a escrita das estruturas condicionais se assemelham as demais linguagens
 
+
+
+funções
+
+fun nomeDaFunção() {
+
+}
+
+para fazer passagem de  parametros é importante especificar o tipo do parametro,ex:
+
+  fun mandarOi(nome: String){
+      println("Oi ${nome}")
+  }
+  mandarOi("Gabriel")
+
+
+  para ter um valor padrão no parametro pode-se utilizar essa sintaxe:
+
+  fun mandarOi(nome: String = "Desconhecido"){
+     println("Oi ${nome}")
+  }
+  
+  mandarOi() - a saída será Oi Desconhecido
+
+  A passagem de parametro é obrigatoria caso exista uma chamada no escopo da função, se não for passado nenhum parametro e não houver um valor padrão, a saída será um erro. 
+
+  funções que retornam valores, precisam ter o tipo do retorno espeficiado. ex:
+
+  fun soma (a : Int, b: Int): Int{
+    return a+b
+}
+
+println(soma(2,3))
+
+uma forma mais fácil de escrever a mesma função é:
+fun soma(a : Int, b : Int): Int = a + b
+ println(soma(2,3))
+
+
+ loops
+
+
+ while:
+
+ sintaxe de uma estrutura de repetição while, potencia:
+
+fun potencia (base: Int, exp: Int): Int{
+    var resultado = base
+    var repeticoes = exp -1
+    while (repeticoes != 0){
+        
+        resultado = resultado*base
+        repeticoes--
+        
+    }
+  
+    return resultado
+}
+  println(potencia(2,3))
+
+
+
+  For:
+
+  função usando estrutura for
+
+  fun potencia (base: Int, exp: Int): Int{
+    var resultado = base
+    var repeticoes = exp -1
+    
+    for (i in 1.. exp-1){
+        
+        resultado = resultado*base
+       
+        
+    }
+  
+    return resultado
+}
+  println(potencia(2,3))
+
+  outro exemplo:
+
+  for(i in 0.. 3){
+    
+    println(i)
+}
+
+saída: 0, 1, 2, 3
+
+
