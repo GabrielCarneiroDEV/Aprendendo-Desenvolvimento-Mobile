@@ -155,3 +155,55 @@ fun potencia (base: Int, exp: Int): Int{
 saída: 0, 1, 2, 3
 
 
+
+arrays em java:
+
+formas de declarar:
+
+*em Kotlin vc pode dizer a capacidade da array, caso não seja especificado a capacidade inicial será 10 posições. 
+
+
+lista de inteiros vazia sem definir a capacidade:
+val listaDeInteiros = ArrayList<Int>()
+
+
+lista de Strings de capacidade 5:
+avl listaDeStrings = arrayListOf<String>(5)
+
+lista de inteiros com 6 itens:
+val sequenciaDeInteiros = arrayListOF<Int>(1, 2, 3, 4, 5, 6)
+
+se o conteúdo já forexpecificados é opcional dizer o tipo:
+
+val semEspecificarOTipo = ("José", "João", "Maria")
+
+
+como varrer uma array usando for:
+
+val sequencia = arrayListOf <Int> (1, 2, 3, 4, 5, 6);
+for(i in sequencia){
+    
+    println(i)
+}
+
+
+outra forma de escrever um loop for com array:
+
+val convidados = arrayListOf ("José", "João", "Maria")
+for((index, i) in convidados.withIndex()){
+    
+println("convidado: $index $i ")
+
+}
+
+saída:
+
+convidado: 0 José 
+convidado: 1 João 
+convidado: 2 Maria 
+
+
+
+as palavras reservadas "continue" e "break" funcionam de forma similar ao JS
+
+
